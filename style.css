@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 350px;
+  height: 600px;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px #ccc;
+}
+.caculate {
+  width: 100%;
+  background-color: #4b6d91;
+  height: 30%;
+}
+.caculate .caculate__display {
+  width: 100%;
+  height: 20%;
+  background: transparent;
+  color: #b2bcc8;
+  font-size: 14px;
+  border: none;
+  text-align: right;
+  padding: 0 30px;
+  outline: none;
+}
+.caculate .caculate__display::placeholder {
+  color: #b2bcc8;
+}
+
+.caculate .caculate__result {
+  height: 80%;
+  background-color: #698eb6;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: right;
+  font-size: 50px;
+  padding: 0 30px;
+  color: #ccc;
+}
+.caculate .caculate__result::placeholder {
+  color: #eee;
+}
+
+.key-board {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.key-board .key-board__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.key-board .btn {
+  width: 55px;
+  height: 55px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px #ccc;
+  font-size: 20px;
+  color: #6682a0;
+  font-weight: 100;
+  cursor: pointer;
+}
+.key-board .btn:hover {
+  background: #b3b8bd;
+  color: #fff;
+}
+.key-board .btn:active {
+  opacity: 0.5;
+}
+.key-board .btn--primary {
+  background-color: #f2f5f9;
+}
+.key-board .btn--secondary {
+  background-color: #4b6d91;
+  color: #fff;
+}
+.key-board .btn--orange {
+  background-color: #eb8468;
+  color: #fff;
+}
